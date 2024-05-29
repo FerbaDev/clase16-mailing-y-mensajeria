@@ -40,7 +40,7 @@ app.get("/mail", async (req, res) => {
 
         res.send("Correo enviado correctamente!");
     } catch (error) {
-        res.status(500).send("Error al enviar mail, vamos a morir.");
+        res.status(500).send("Error al enviar mail.");
     }
 })
 
@@ -57,9 +57,9 @@ app.post("/enviarmensaje", async (req, res) => {
             text: mensaje
         })
 
-        res.send("Correo enviado exitosamenteee la vida nos sonrieeeee, este find e semana sera perfecto")
+        res.send("Correo enviado exitosamente.")
     } catch (error) {
-        res.status(500).send("Todo nos sale mal, tantas carreras para decidir y elegi la que no tengo talento"); 
+        res.status(500).send("Error al enviar"); 
     }
 })
 
